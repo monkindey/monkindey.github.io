@@ -1,0 +1,250 @@
+html {
+	height: 100%;
+	position: relative;
+}
+
+body:before {
+	height: 50%;
+	width: 100%;
+	background-image: url(images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	content: ''; 
+	-webkit-filter: blur(4px);
+	-moz-filter: blur(4px);
+	-ms-filter: blur(4px);
+	-o-filter: blur(4px);	
+	filter: blur(4px);
+}
+
+
+.intro {
+	color: white;
+	position: absolute;
+	bottom: 50%;
+	right: 0;
+	left: 0;
+	top: 15%;
+	margin: auto;
+	width: 40%;
+	text-align: center;
+}
+
+.join {
+    color: #FFF;
+	font-size: 100%;
+	display: inline-block;
+	background: #00B220;
+	padding: .5em 1.5em;
+	margin: 0.5em 0 0 0;
+	line-height: 1;
+	border-radius: 1em;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.3);
+	transition: .7s;
+}
+
+.lecturer {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+
+.lecturer-list {
+	list-style: none;
+	text-align: center;
+	width: 100%;
+	-webkit-padding-start: 0;
+	margin: 0;
+}
+
+.lecturer-list li {
+	display: inline-block;
+	height: 102px;
+	width: 102px;
+	margin-left: 20px;
+}
+
+.lecturer-list li:first-child {
+	margin-left: 0;
+}
+
+.line {
+	position: relative;
+	height: 10px;
+	background: url(images/line.png) repeat-x;
+	top: 80px;
+	z-index: -10;
+}
+
+#about {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	color: #999;
+	font-size: 15px;
+	margin-top: 35px;
+	position: relative;
+}
+
+#about .title {
+	font-weight: 300;
+	margin-bottom: 0;
+}
+
+.title strong {
+	color: #000;
+	font-size: 20px;
+	padding-right: 20px;
+}
+
+#about .brief {
+	line-height: 30px;
+	margin-top: 5px;
+}
+
+/*肖像*/
+.avatar-140 {
+	display: inline-block;
+	height: 140px;
+	width: 140px;
+	position: absolute;
+	top: -15px;
+	left: -25px;
+}
+
+/*1*/
+.kaitao {
+	background: url(images/kaitao-gray.png) no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.kaitao:hover {
+	background: url(images/kaitao.png) no-repeat;
+	background-size: cover;
+}
+
+.kaitao-140 {
+	background: url(images/kaitao.png) no-repeat;
+	background-size: cover;
+}
+
+/*2*/
+.zhangshuai {
+	background: url(images/zhangshuai-gray.png) no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.zhangshuai:hover {
+	background: url(images/zhangshuai.png) no-repeat;
+	background-size: cover;
+}
+
+.zhangshuai-140 {
+	background: url(images/zhangshuai.png) no-repeat;
+	background-size: cover;
+}
+
+/*3*/
+.aapo {
+	background: url(images/aapo-gray.png) no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.aapo:hover {
+	background: url(images/aapo.png) no-repeat;
+	background-size: cover;
+}
+
+.aapo-140 {
+	background: url(images/aapo.png) no-repeat;
+	background-size: cover;
+}
+
+/*4*/
+.chun {
+	background: url(images/chun-gray.png) no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.chun:hover {
+	background: url(images/chun.png) no-repeat;
+	background-size: cover;
+}
+
+.chun-140 {
+	background: url(images/chun.png) no-repeat;
+	background-size: cover;
+}
+
+/*5*/
+.dejiang {
+	background: url(images/dejiang-gray.png) no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.dejiang:hover {
+	background: url(images/dejiang.png) no-repeat;
+	background-size: cover;
+}
+
+.dejiang-140 {
+	background: url(images/dejiang.png) no-repeat;
+	background-size: cover;
+}
+
+/*6*/
+.weibin {
+	background: url(images/weibin-gray.png) no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.weibin:hover {
+	background: url(images/weibin.png) no-repeat;
+	background-size: cover;
+}
+
+.weibin-140 {
+	background: url(images/weibin.png) no-repeat;
+	background-size: cover;
+}
+
+/*7*/
+.zhangcong {
+	background: url(images/zhangcong-gray.png) no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.zhangcong:hover {
+	background: url(images/zhangcong.png) no-repeat;
+	background-size: cover;
+}
+
+.zhangcong-140 {
+	background: url(images/zhangcong.png) no-repeat;
+	background-size: cover;
+}
+
+.QRcode {
+	position: absolute;
+	top: 200px;
+	right: 13%;
+	height: 108px;
+	width: 108px;
+}
