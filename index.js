@@ -85,7 +85,7 @@
 	});
 
 	var step3 = step({
-		cmd: 'my name is zhangkaihao, i live in Beijing now.',
+		cmd: 'my name is zhangkaihao, i live in Zhuhai now.',
 		cls: 'result line'
 	});
 
