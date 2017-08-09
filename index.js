@@ -76,12 +76,12 @@
 
   var step2 = step({
     cmd:
-      'i am a front-ender, graduate from  Guangdong University of Technology.',
+      'I am a Web Developer, graduated from Guangdong University of Technology.',
     cls: 'result line'
   });
 
   var step3 = step({
-    cmd: 'my name is zhangkaihao, i live in Zhuhai now.',
+    cmd: 'My name is KihoCham, I live in Zhuhai now.',
     cls: 'result line'
   });
 
@@ -123,7 +123,9 @@
   var step11 = step({
     cmd: 'opening......',
     cb: function() {
-      // window.location.href = 'https://github.com/monkindey';
+      if (confirm('Will you look my github ?')) {
+        window.location.href = 'https://github.com/monkindey';
+      }
     }
   });
 
