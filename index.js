@@ -69,7 +69,7 @@
   };
 
   var step1 = step({
-    cwd: 'C:\\Users\\monkindey>',
+    cwd: '/Users/monkindey>',
     cmd: ' whois',
     cls: ''
   });
@@ -86,12 +86,12 @@
   });
 
   var step4 = step({
-    cwd: 'C:\\Users\\monkindey>',
+    cwd: '/Users/monkindey>',
     cmd: ' cd hobby'
   });
 
   var step5 = step({
-    cwd: 'C:\\Users\\monkindey\\hobby> ',
+    cwd: '/Users/monkindey/hobby> ',
     cmd: ' dir'
   });
 
@@ -101,12 +101,12 @@
   });
 
   var step7 = step({
-    cwd: 'C:\\Users\\monkindey\\hobby> ',
+    cwd: '/Users/monkindey/hobby> ',
     cmd: 'cd coding'
   });
 
   var step8 = step({
-    cwd: 'C:\\Users\\monkindey\\hobby\\coding> ',
+    cwd: '/Users/monkindey/hobby/coding> ',
     cmd: 'dir'
   });
 
@@ -116,7 +116,7 @@
   });
 
   var step10 = step({
-    cwd: 'C:\\Users\\monkindey\\hobby\\coding> ',
+    cwd: '/Users/monkindey/hobby/coding> ',
     cmd: 'net start github'
   });
 

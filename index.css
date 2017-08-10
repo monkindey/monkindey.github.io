@@ -6,34 +6,86 @@ p {
 
 html,
 body,
-.about-wrap {
+main {
   height: 100%;
 }
 
 body {
   position: relative;
   background-color: #ddd;
-  font-family: Consolas, 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 15px;
+  /*font-family: Consolas, 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;*/
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 14px;
   -webkit-font-smoothing: antialiased;
 }
 
-.about-wrap {
+main {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 13px;
 }
 
-#about-me {
+.sh {
   width: 50%;
   min-width: 400px;
   height: 300px;
 
-  background-color: rgb(34, 34, 34);
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+
+.sh-dark {
+  background-color: black;
   color: #fff;
-  padding: 20px;
-  border-radius: 4px;
-  box-shadow: 5px 5px 5px #888;
+}
+
+.sh-hd {
+  height: 30px;
+  position: relative;
+}
+
+.sh-icon {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  line-height: 12px;
+  cursor: pointer;
+}
+
+.sh-icon:hover {
+  color: rgba(0, 0, 0, .6);
+}
+
+.sh-icon-close {
+  background-color: #ff5f56;
+  color: #ff5f56;
+  left: 10px;
+}
+
+.sh-icon-minimize {
+  background-color: #ffbd2e;
+  left: 30px;
+}
+
+.sh-icon-full-screen {
+  background-color: #27c93f;
+  left: 50px;
+}
+
+.sh-bd {
+  padding: 10px;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
 
 .line {
