@@ -123,7 +123,7 @@
   var step11 = step({
     cmd: 'opening......',
     cb: function() {
-      if (confirm('Will you look my github ?')) {
+      if (confirm('Will you take a look at my github ?')) {
         window.location.href = 'https://github.com/monkindey';
       }
     }
