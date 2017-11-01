@@ -363,13 +363,13 @@ function(val){ return this.increment + val }
 > If the function code is strict code, set the ThisBinding to thisArg.
 Else if thisArg is null or undefined, set the ThisBinding to the global object.
 
-函数`this`还会分成有没`strict mode`情况的。但是咱们没有在上面的代码看到`'use strict'`的语句，并且咱们的`thisArg`根据上面来看应该是`undefined`，那么它的`ThisBinding`应该是`global`才对呀，为什么是`undefined`呢？
+函数`this`还会分成有没`strict mode`情况的。但是咱们没有在上面的代码看到`'use strict'`的语句，并且咱们的`thisArg`根据上面来看是`undefined`，那么它的`ThisBinding`应该是`global`才对呀，为什么是`undefined`呢？
 
 咱们看看ES6文档[10.2.1](http://www.ecma-international.org/ecma-262/6.0/#sec-class-definitions)一句很重要的话就是
 
 > All parts of a ClassDeclaration or a ClassExpression are strict mode code.
 
-`Class`声明或者表达式都是默认严格模式，这样子是不是很明朗了。所以`map`操作函数的时候，不管你放在那里，都不会去继承上一级的`this`，而是自己存在自己的`this`，对于`this`的值有对应的规则可循。这种在`method`里面执行函数的`this`有一个名词叫做`shadowing this`来描述这种`this`情况。
+`Class`声明或者表达式都是默认严格模式，这样子是不是很明朗了。所以在严格模式下, `map`操作函数的时候，不管你放在那里，都不会去继承上一级的`this`，而是自己支配自己的`this`，thisArg是`undefined`, 那么`ThisBinding`也为`undefined`。这种在`method`里面执行函数的`this`有一个名词叫做`shadowing this`来描述这种`this`类型。
 
 下面有四种解决方案：
 
@@ -408,7 +408,7 @@ Else if thisArg is null or undefined, set the ThisBinding to the global object.
 	    );
 	  }
 	}
-	```
+```
 
 3. `Array.prototype.map()`设置第二个参数
 
@@ -479,10 +479,10 @@ const call = Function.call;
 
 ```js
 const call = Function.call;
-() => Number.call(arguments);
+() => Number.call(...arguments);
 ```
 
-因为`() => Number.call(arguments)`是放在`map()`里面的，所以`arguments`分别会是`[undefined, index, arr]`
+因为`() => Number.call(...arguments)`是放在`map()`里面的，所以`arguments`分别会是`[undefined, index, arr]`
 
 <div align="center">⬇</div>
 
