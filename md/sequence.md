@@ -408,7 +408,7 @@ Else if thisArg is null or undefined, set the ThisBinding to the global object.
 	    );
 	  }
 	}
-```
+	```
 
 3. `Array.prototype.map()`设置第二个参数
 
