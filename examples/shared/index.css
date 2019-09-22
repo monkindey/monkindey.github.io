@@ -4,3 +4,8 @@ body {
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
 }
+
+h3 {
+  border-left: 3px solid #eee;
+  padding-left: 10px;
+}
