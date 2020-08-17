@@ -1,2 +1,2 @@
 /useTable/* https://usetable.netlify.app/:splat 200!
-/u/* /:splat 200!
+/u/* https://usetable.netlify.app/u/:splat 200!
